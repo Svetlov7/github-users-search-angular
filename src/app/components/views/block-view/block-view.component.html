@@ -1,0 +1,6 @@
+<ul class="list-group">
+  <li class="list-group-item p-0" *ngFor="let user of data; let i = index;">
+    <a [routerLink]="['/detail', user.id]" class="d-block p-3">{{i+1}}. {{user.login}}</a>
+  </li>
+</ul>
+

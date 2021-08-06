@@ -1,0 +1,12 @@
+.list-group {
+  padding: 20px 0;
+  &-item {
+    transition: .2s background-color;
+    &:hover {
+      background-color: #eee;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+}

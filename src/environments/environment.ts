@@ -3,6 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+  route: 'https://api.github.com/search/users',
+  per_page: '20',
   production: false
 };
 

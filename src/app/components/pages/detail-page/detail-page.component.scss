@@ -1,0 +1,12 @@
+.user{
+  border: 1px solid #eee;
+  border-radius: 5px;
+
+  &__img {
+    max-width: 300px;
+  }
+
+  img {
+    width: 100%;
+  }
+}

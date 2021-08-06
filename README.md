@@ -1,3 +1,22 @@
+# Structure
+`components`
+    - core: contains app component and main layout component
+    - pages: dist for the app pages
+        - detail-page: page with the single users data (avatar, type, login, link)
+        - error-page: 404
+        - user-list-page: contains two dynamic components itself (table and blocks)
+    - views: dist for the template partials or dynamic components
+        - block view: dynamic component block styled view 
+        - table view: dynamic component table styled view
+`directives` - directives for project
+`interfaces` - interfaces for project
+`services`
+    - users: contains request to api and handling errors
+    - userStore: using for saving data from api
+    
+# Environment
+Settings for request route and average pages located in - src\environments
+
 # GithubTestApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.6.
