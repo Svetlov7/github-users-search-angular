@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import {Observable, Subject, throwError} from 'rxjs'
 import {HttpClient, HttpErrorResponse, HttpParams} from '@angular/common/http'
 import {catchError, map} from 'rxjs/operators'
-import {User} from '../../interfaces/user'
+import {UserModel} from '../../models/user.model'
 import {environment} from '../../../environments/environment'
 
 @Injectable()
@@ -12,7 +12,7 @@ export class UsersService {
 
   constructor(private http: HttpClient) { }
 
-  getUsers(value: string): Observable<User[]> {
+  getUsers(value: string): Observable<UserModel[]> {
     const perPage = environment.per_page
     let params = new HttpParams()
     params = params.append('q', value)

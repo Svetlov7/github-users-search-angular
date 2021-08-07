@@ -9,7 +9,7 @@
         - block view: dynamic component block styled view 
         - table view: dynamic component table styled view
 `directives` - directives for project
-`interfaces` - interfaces for project
+`models` - interfaces for project
 `services`
     - users: contains request to api and handling errors
     - userStore: using for saving data from api

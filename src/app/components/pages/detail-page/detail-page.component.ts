@@ -1,7 +1,7 @@
 import {Component, OnDestroy, OnInit} from '@angular/core'
 import {ActivatedRoute, Router} from '@angular/router'
 import {UsersStoreService} from '../../../services/usersStore/users-store.service'
-import {User} from '../../../interfaces/user'
+import {UserModel} from '../../../models/user.model'
 
 @Component({
   selector: 'app-detail-page',
@@ -10,7 +10,7 @@ import {User} from '../../../interfaces/user'
 })
 export class DetailPageComponent implements OnInit, OnDestroy {
 
-  user: User
+  user: UserModel
   pageId: string = this.route.snapshot.params.id
   constructor(private route: ActivatedRoute,
               private usersStore: UsersStoreService,

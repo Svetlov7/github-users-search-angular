@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {User} from '../../../interfaces/user'
+import {UserModel} from '../../../models/user.model'
 
 @Component({
   selector: 'app-block-view',
@@ -7,7 +7,7 @@ import {User} from '../../../interfaces/user'
   styleUrls: ['./block-view.component.scss']
 })
 export class BlockViewComponent implements OnInit {
-  @Input() data: User[]
+  @Input() data: UserModel[]
 
   constructor() { }
 

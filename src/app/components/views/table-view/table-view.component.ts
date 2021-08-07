@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {User} from '../../../interfaces/user'
+import {UserModel} from '../../../models/user.model'
 
 @Component({
   selector: 'app-table-view',
@@ -8,7 +8,7 @@ import {User} from '../../../interfaces/user'
 })
 export class TableViewComponent implements OnInit {
 
-  @Input() data: User[]
+  @Input() data: UserModel[]
 
   constructor() { }
 

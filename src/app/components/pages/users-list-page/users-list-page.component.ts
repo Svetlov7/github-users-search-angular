@@ -6,7 +6,7 @@ import {BlockViewComponent} from '../../views/block-view/block-view.component'
 import {RefDirective} from '../../../directives/ref/ref.directive'
 import {FormControl, FormGroup, Validators} from '@angular/forms'
 import {UsersStoreService} from '../../../services/usersStore/users-store.service'
-import {User} from '../../../interfaces/user'
+import {UserModel} from '../../../models/user.model'
 import {Subscription} from 'rxjs'
 
 @Component({
@@ -21,7 +21,7 @@ export class UsersListPageComponent implements OnInit, OnDestroy {
 
   activePath: string = this.route.snapshot.routeConfig.path
   loader: boolean = false
-  usersData: User[] = []
+  usersData: UserModel[] = []
   form: FormGroup
   pSub: Subscription
   notFound: boolean = false

@@ -1,18 +1,18 @@
 import { Injectable } from '@angular/core'
-import {User} from '../../interfaces/user'
+import {UserModel} from '../../models/user.model'
 
 @Injectable({
   providedIn: 'root'
 })
 export class UsersStoreService {
-  users: User[] = []
+  users: UserModel[] = []
   constructor() { }
 
-  storeUsers(data: User[]): void {
+  storeUsers(data: UserModel[]): void {
     this.users = data
   }
 
-  getUsersById(id: number): User {
+  getUsersById(id: number): UserModel {
     return this.users.find(item => item.id === id)
   }
 }
